@@ -142,7 +142,7 @@ $ hadoop fs -cat /user/testuser/snapshot_demo/text2.txt
 
 Delete the snapshot 
 ```
-$ hadoop fs -deleteSnapshot /user/testuser/snapshot_demo/sXXXXXXXX-XXXXXX.XXX
+$ hadoop fs -deleteSnapshot /user/testuser/snapshot_demo sXXXXXXXX-XXXXXX.XXX
 ```
 
 Disable snapshot

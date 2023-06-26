@@ -10,6 +10,8 @@
 Username: testuser
 Password: testuser
 ```
+และทำการ Download ไฟล์ hospcode.csv จาก URL ที่วิทยากรแจ้ง
+
 Open the new terminal and follow the below instruction. (See Hadoop Cheat sheet for the Hadoop command detail.)
 
 ## 0) start HDFS Service
@@ -21,5 +23,25 @@ $ start-yarn.sh
 ## 1) Upload dataset to HDFS
 
 ```
-$ hadoop fs -put LogAnalyzer.log
+$ hadoop fs -put ~/Downloads/hospcode.csv
 ```
+
+## 2)	List file on HDFS, explain the difference result between -ls and -lsr
+
+```
+$ hadoop fs –ls
+$ hadoop fs -lsr 
+```
+
+## 3)	Create directory on HDFS, and move file into created directory.
+
+```
+$ hadoop fs -mkdir hospcode_dataset
+$ hadoop fs -mv /user/testuser/hospcode.csv /user/testuser/hospcode_dataset
+```
+
+Rename the hospcode file
+```
+$ hadoop fs -mv /user/testuser/hospcode_dataset/hospcode.csv /user/testuser/hospcode_dataset/data.csv
+```
+

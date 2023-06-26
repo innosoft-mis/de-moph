@@ -45,3 +45,24 @@ Rename the hospcode file
 $ hadoop fs -mv /user/testuser/hospcode_dataset/hospcode.csv /user/testuser/hospcode_dataset/data.csv
 ```
 
+## 4)	Display contents of hospcode.csv file
+
+Display All Content in the terminal
+```
+$ hadoop fs -cat /user/testuser/hospcode_dataset/data.csv
+```
+
+Display only few head line
+```
+$ hadoop fs -cat /user/testuser/hospcode_dataset/data.csv | head
+```
+
+Display only few tail line
+```
+$ hadoop fs -cat /user/testuser/hospcode_dataset/data.csv | tail
+```
+
+Display last 1k byte of file 
+```
+$ hadoop fs -tail /user/testuser/hospcode_dataset/data.csv
+```

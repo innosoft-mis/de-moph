@@ -41,7 +41,8 @@ CREATE EXTERNAL TABLE IF NOT EXISTS hospcode (
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 STORED AS TEXTFILE
-location '/user/testuser/hospcode_dataset';
+location '/user/testuser/hospcode_dataset'
+tblproperties ("skip.header.line.count"="1");
 ```
 
 ## 3)

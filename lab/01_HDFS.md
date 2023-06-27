@@ -160,3 +160,8 @@ $ hdfs lsSnapshottableDir
 $ stop-dfs.sh
 $ stop-yarn.sh
 ```
+
+## HDFS commands
+```
+https://github.com/san089/Cloudera_Material/blob/master/hadoop-hdfs-commands-cheatsheet.pdf
+```

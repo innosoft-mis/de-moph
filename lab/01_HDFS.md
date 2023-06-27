@@ -5,7 +5,7 @@
 -	Files Management on HDFS
 -	Manipulate file on HDFS
 
-## Login to Virtual Machine on VMware
+## Login to Virtual Machine
 ```
 Username: testuser
 Password: testuser

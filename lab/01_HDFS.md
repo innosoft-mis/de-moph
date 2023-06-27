@@ -11,6 +11,10 @@ Username: testuser
 Password: testuser
 ```
 และทำการ Download ไฟล์ hospcode.csv จาก URL ที่วิทยากรแจ้ง
+```
+cd ~
+wget https://github.com/innosoft-mis/de-moph/raw/main/hospcode.csv
+```
 
 Open the new terminal and follow the below instruction. (See Hadoop Cheat sheet for the Hadoop command detail.)
 
